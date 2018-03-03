@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+@using LearnMVC5.ViewModels
+@model EmployeeViewModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView3</title>
+</head>
+<body>
+    <div> 
+        Hello @Model.UserName
+        <hr />
+        <div>
+            <b> Employee Details</b><br />
+            Employee Name : @Model.EmployeeName <br />
+            <span style="background-color:@Model.SalaryColor">
+                Employee Salary: @Model.Salary
+            </span>
+        </div>
+    </div>
+</body>
+</html>
