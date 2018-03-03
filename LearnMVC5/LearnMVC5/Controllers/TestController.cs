@@ -10,6 +10,10 @@ namespace LearnMVC5.Controllers
     {
         public string CustomerName { get; set; }
         public string Address { get; set; }
+        public override string ToString()
+        {
+            return this.CustomerName + "|" + this.Address;
+        }
     } 
     public class TestController : Controller
     {
