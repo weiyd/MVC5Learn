@@ -23,12 +23,16 @@ namespace LearnMVC5.Controllers
         {
             return "控制器直接返回的字符串";
         }
-        public  Customer GetCustomer()
+        public Customer GetCustomer()
         {
             Customer c = new Customer();
             c.CustomerName = "weiyd";
             c.Address = "Milink";
             return c;
+        }
+        public ActionResult GetView()
+        {
+            return View("MyView");
         }
     }
 }
