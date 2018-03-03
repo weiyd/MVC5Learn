@@ -14,5 +14,15 @@
     <div> 
         <p>这是Controller中GetView返回View("MyView")产生的View</p>
     </div>
+    <div>
+        @{
+            LearnMVC5.Models.Employee emp =
+         (LearnMVC5.Models.Employee)ViewData["Employee"];
+        }
+
+        <b>Employee Details </b><br/>
+        Employee Name : @emp.FirstName@emp.LastName <br/>
+        Employee Salary: @emp.Salary.ToString("C")
+    </div>
 </body>
 </html>
