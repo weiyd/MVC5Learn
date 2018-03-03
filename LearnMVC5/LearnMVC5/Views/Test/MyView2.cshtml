@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+@* 不能在一个强类型View使用多个Model类型 *@
+@model LearnMVC5.Models.Employee
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView2</title>
+</head>
+<body>
+    <div> 
+        Employee Details
+        Employee Name : @Model.FirstName @Model.LastName
+        @if (Model.Salary > 15000)
+        {
+            <span style="background-color:yellow">
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
+        else
+        {
+            <span style="background-color:green">
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
+    </div>
+</body>
+</html>
