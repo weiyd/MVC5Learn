@@ -43,6 +43,7 @@ namespace LearnMVC5.Controllers
         }
         public ActionResult GetViewModel()
         {
+            
             EmployeeListViewModel employeeListViewModel = new EmployeeListViewModel();
 
             EmployeeBusinessLayer employeeBal = new EmployeeBusinessLayer();
