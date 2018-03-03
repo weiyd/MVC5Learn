@@ -18,6 +18,7 @@ namespace LearnMVC5.Controllers
     public class TestController : Controller
     {
         // GET: Test
+        [NonAction]
         public string GetString()
         {
             return "控制器直接返回的字符串";
