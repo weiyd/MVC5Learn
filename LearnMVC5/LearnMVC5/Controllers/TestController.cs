@@ -6,12 +6,24 @@ using System.Web.Mvc;
 
 namespace LearnMVC5.Controllers
 {
+    public class Customer
+    {
+        public string CustomerName { get; set; }
+        public string Address { get; set; }
+    } 
     public class TestController : Controller
     {
         // GET: Test
         public string GetString()
         {
             return "控制器直接返回的字符串";
+        }
+        public  Customer GetCustomer()
+        {
+            Customer c = new Customer();
+            c.CustomerName = "weiyd";
+            c.Address = "Milink";
+            return c;
         }
     }
 }
